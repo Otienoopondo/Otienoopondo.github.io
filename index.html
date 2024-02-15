@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-    <head><style>
+    <head> <style>
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px) rotate(-5deg); }
+      75% { transform: translateX(5px) rotate(5deg); }
+      100% { transform: translateX(0); }
+    }
+
+    .shaking-image {
+      animation: shake 5s infinite;
+    }
+    </style><style>
     body {
       margin: 0;
       padding: 0;
@@ -14,7 +25,7 @@
     </head>
 <body><div style="background-color: #FBEEC1;" >
     <div style="background-color: chartreuse;">
-    <h1 align="center" style="font-family: 'Roboto Mono' ,monospace;font-size: xx-large;color:crimson;background-color: chartreuse;"><img src="otwala.png" alt="sweetsam" align="left" width="80px" height="80px" float="right" style="background-color: #FBEEC1" ><img src="otwala.png" alt="sweetsam" align="right" width="80px" height="80px" float="left" style="background-color:#FBEEC1" >TechSam Computer Solutions</h1>
+    <h1 align="center" style="font-family: 'Roboto Mono' ,monospace;font-size: xx-large;color:crimson;background-color: chartreuse;"><img class="shaking-image" src="otwala.png" alt="sweetsam" align="left" width="80px" height="80px" float="right" style="background-color: #FBEEC1" ><img class="shaking-image" src="otwala.png" alt="sweetsam" align="right" width="80px" height="80px" float="left" style="background-color:#FBEEC1" >TechSam Computer Solutions</h1>
     <h2 align="left" style="font-family: 'Pacifio', cursive;font-size: 300%;color:rgb(255, 230, 0);background-color: brown;">TECHSAM254</h2>
     <div align="left" style="background-color: beige;"></div>
 </div>
