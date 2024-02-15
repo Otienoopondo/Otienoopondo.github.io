@@ -46,7 +46,7 @@
 </head>
 <body>
 
-        <button id="orderButton" class="order-btn" onclick="showOrderForm()">Order Service</button>
+        <button id="orderButton" class="order-btn" onclick="toggleFormVisibility()">Order Service</button>
 
     <form id="orderForm" class="order" action="https://formspree.io/f/mjvnwrwz" method="POST">
         <div class="form-entry">
@@ -72,8 +72,13 @@
         </div>
     </form>
     <script>
-  function showOrderForm() {
-    document.getElementById("orderForm").style.display = "block";
+  function toggleFormVisibility() {
+    var form = document.getElementById("orderForm");
+    if (form.style.display === "none") {
+      form.style.display = "block";
+    } else {
+      form.style.display = "none";
+    }
   }
     </script>
     <div id="ShowThanksMessage" style="display: none;">
