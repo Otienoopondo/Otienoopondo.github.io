@@ -75,6 +75,8 @@
             <input type="tel" id="phoneNumber" name="phoneNumber" required>
         </div>
         <div class="form-entry">
+            <label for="location">Location:</label>
+            <input type="text" id="loation" name="name" required>
             <label for="serviceType">Select Service:</label>
             <select id="serviceType" name="serviceType" required>
                 <option value="1">Windows 10 Installation</option>
@@ -85,8 +87,9 @@
                 <option value="6">Microsoft Office 2021 Installation</option>
                 <option value="7">Other</option>
             </select>
-        <input type="submit" value="Submit" onclick="ShowThanksMessage()">
         </div>
+        <input type="submit" value="Submit" onclick="ShowThanksMessage()">
+        
     </form>
     <script>
   function toggleFormVisibility() {
