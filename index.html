@@ -69,8 +69,17 @@
                 <option value="7">Other</option>
             </select>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="ShowThanksMessage()">Submit</button>
     </form>
+    <div id="thanksMessage" style="display: none;">
+  Thanks for ordering!
+</div>
+<script>
+  function showThanksMessage() {
+    document.getElementById("myForm").style.display = "none";
+    document.getElementById("thanksMessage").style.display = "block";
+  }
+</script>
 
     <script>
         function showOrderForm() {
