@@ -1,23 +1,40 @@
-.background-slideshow {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    position: relative; /* Ensure positioning for absolute children */
-    overflow: hidden; /* Prevent overflow */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.fade {
-    position: absolute; /* Overlay images on top of each other */
+.content-container {
+    position: relative; /* Allows absolute positioning of the slideshow */
+    width: 100%;
+    height: 100vh; /* Set height as needed */
+    overflow: hidden; /* Prevents overflow */
+}
+
+.background-slideshow {
+    position: absolute; /* Position the slideshow behind the content */
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out; /* 1 second for fading */
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send background behind content */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7; /* Adjust opacity for better content visibility */
+    transition: background-image 1s ease-in-out; /* Smooth transition */
 }
 
-.fade.active {
-    opacity: 1; /* Fully visible */
+.content {
+    position: relative; /* Keeps the content above the slideshow */
+    z-index: 1; /* Ensure content is above background */
+    padding: 20px;
+    background-color: rgba(0, 128, 0, 0.6); /* Semi-transparent dark green */
+    color: white; /* Text color for visibility */
 }
 
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
