@@ -1,8 +1,6 @@
 const images = [
     'linux.jpg',
-    'microsoft office 2021.jpg',
     'tech.jpg',
-    'techno.jpg',
     'windows10.jpg',
     'windows11.jpg',
     'kalilinux.jpg'
@@ -16,5 +14,5 @@ function changeBackground() {
     index = (index + 1) % images.length; // Loop back to the first image
 }
 
-setInterval(changeBackground, 3000); // Change background every 3 seconds
+setInterval(changeBackground, 5000); // Change background every 3 seconds
 changeBackground(); // Set initial backgroun
