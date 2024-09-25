@@ -1,6 +1,6 @@
 const images = [
     'linux.jpg',
-    'microsoft office 2021.jpg',
+    'microsoftoffice2021.jpg',
     'tech.jpg',
     'techno.jpg',
     'windows10.jpg',
